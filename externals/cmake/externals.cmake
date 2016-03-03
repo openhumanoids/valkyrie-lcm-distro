@@ -11,26 +11,14 @@ set(bot_core_lcmtypes_url https://github.com/openhumanoids/bot_core_lcmtypes.git
 set(bot_core_lcmtypes_revision 02a41c0a0b017d09c410d87343652c7e2cadf4c6)
 set(bot_core_lcmtypes_depends ${lcm_proj})
 
-#set(libbot_url https://github.com/openhumanoids/libbot.git)
-#set(libbot_revision ed4a76423f2a21594436490341f907710d3f78dd)
-#set(libbot_depends bot_core_lcmtypes ${lcm_proj})
-
-#set(Eigen_pod_url https://github.com/RobotLocomotion/eigen-pod.git)
-#set(Eigen_pod_revision ceba39500b89a77a8649b3e8b421b10a3d74d42b)
-#set(Eigen_pod_depends)
-
-#set(cmake_scripts_url https://github.com/RobotLocomotion/cmake.git)
-#set(cmake_scripts_revision be0915b23c81d4dce8a6f62e4e74214c7047558a)
-#set(cmake_scripts_external_args
-#  ${download_only_args}
-#  SOURCE_DIR ${source_prefix}/../drake/drake/cmake
-#  )
+set(libbot_url https://github.com/openhumanoids/libbot.git)
+set(libbot_revision ed4a76423f2a21594436490341f907710d3f78dd)
+set(libbot_depends bot_core_lcmtypes ${lcm_proj})
 
 set(externals
-  #Eigen_pod
   ${lcm_proj}
   bot_core_lcmtypes
-  #libbot
+  libbot
 )
 
 
