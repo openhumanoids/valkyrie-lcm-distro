@@ -12,7 +12,7 @@ set(bot_core_lcmtypes_revision 02a41c0a0b017d09c410d87343652c7e2cadf4c6)
 set(bot_core_lcmtypes_depends ${lcm_proj})
 
 set(libbot_url https://github.com/openhumanoids/libbot.git)
-set(libbot_revision ed4a76423f2a21594436490341f907710d3f78dd)
+set(libbot_revision 5ca2e5f3ceff53e40b64da6b4fa84dbeecf35ace)
 set(libbot_depends bot_core_lcmtypes ${lcm_proj})
 
 set(externals
