@@ -28,6 +28,8 @@ set(download_only_args
   INSTALL_COMMAND ${empty_command}
 )
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wreturn-type -Wuninitialized -Wunused-variable")
+
 # python
 find_package(PythonLibs 2.7 REQUIRED)
 
