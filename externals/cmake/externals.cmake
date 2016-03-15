@@ -7,8 +7,9 @@ set(lcm_external_args
   BUILD_IN_SOURCE 1
   )
 
-set(bot_core_lcmtypes_url https://github.com/openhumanoids/bot_core_lcmtypes.git)
-set(bot_core_lcmtypes_revision 71a040a42180e42910b447f520282c91fbd08610)
+set(bot_core_lcmtypes_url https://github.com/iamwolf/bot_core_lcmtypes.git)
+#set(bot_core_lcmtypes_url https://github.com/openhumanoids/bot_core_lcmtypes.git)
+set(bot_core_lcmtypes_revision bc6398c77c7f3eee8b492d4ec76a6a6c65dfeeca)
 set(bot_core_lcmtypes_depends ${lcm_proj})
 
 set(libbot_url https://github.com/openhumanoids/libbot.git)
