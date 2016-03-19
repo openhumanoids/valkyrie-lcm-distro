@@ -12,8 +12,11 @@ set(bot_core_lcmtypes_revision c29cd6076d13ca2a3ecc23ffcbe28a0a1ab46314)
 set(bot_core_lcmtypes_depends ${lcm_proj})
 
 set(libbot_url https://github.com/openhumanoids/libbot.git)
-set(libbot_revision ed4a76423f2a21594436490341f907710d3f78dd)
+set(libbot_revision 70b6b4acceae3d18b23f0241b001ddb83ae5a124) #ed4a76423f2a21594436490341f907710d3f78dd)
 set(libbot_depends bot_core_lcmtypes ${lcm_proj})
+set(libbot_external_args
+  CMAKE_CACHE_ARGS ${default_cmake_args} -DWITH_BOT_VIS:BOOL=OFF
+  )
 
 set(externals
   ${lcm_proj}
