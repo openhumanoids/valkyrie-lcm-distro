@@ -19,7 +19,9 @@ export PKG_CONFIG_PATH=$DISTRO_BASE/build/lib/pkgconfig:$DISTRO_BASE/build/lib64
 3. Copy the scripts under init.d to ``/etc/init.d/``
 4. Re-source via ``source ~/.bashrc``
 5. Compile
-6. Reboot and you're set :)
+6. To set up the start of the services during boot: ``update-rc.d valkyrie_lcm_distro_bot_lcm_tunnel defaults``; ``update-rc.d valkyrie_lcm_distro_bot_procman_deputy defaults``
+7. Reboot and you're set :)
+8. To uninstall ``sudo service valkyrie_lcm_distro_bot_lcm_tunnel uninstall`` and ``sudo service valkyrie_lcm_distro_bot_procman_deputy uninstall``
 
 For more information on the system V init script, cf. [here](https://github.com/fhd/init-script-template).
 

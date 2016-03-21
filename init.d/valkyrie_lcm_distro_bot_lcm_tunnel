@@ -9,7 +9,7 @@
 # Description:       Enable LCM communication passthrough immediately after boot.
 ### END INIT INFO
 
-directory="/home/val/valkyrie-lcm-distro"
+directory="/home/val/openhumanoids/valkyrie-lcm-distro"
 cmd="bot-lcm-tunnel"
 user="val"
 
