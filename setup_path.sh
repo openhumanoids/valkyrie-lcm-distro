@@ -1,5 +1,5 @@
 #!/bin/bash
-export DISTRO_BASE=`pwd`
+export DISTRO_BASE="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 export PATH=$PATH:$DISTRO_BASE/build/bin
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
