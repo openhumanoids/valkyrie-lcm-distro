@@ -9,16 +9,14 @@
 # Description:       Enable LCM communication passthrough immediately after boot.
 ### END INIT INFO
 
-directory="/home/val/openhumanoids/valkyrie-lcm-distro"
-cmd="bot-lcm-tunnel"
+directory="/home/val/openhumanoids/valkyrie-lcm-distro/build/bin"
+cmd="./bot-lcm-tunnel"
 user="val"
 
 name=`basename $0`
 pid_file="/var/run/$name.pid"
 stdout_log="/var/log/$name.log"
 stderr_log="/var/log/$name.err"
-
-export PATH=$PATH:$directory/build/bin
 
 get_pid() {
     cat "$pid_file"
