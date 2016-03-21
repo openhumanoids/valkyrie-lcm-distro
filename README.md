@@ -16,7 +16,7 @@ export PKG_CONFIG_PATH=$DISTRO_BASE/build/lib/pkgconfig:$DISTRO_BASE/build/lib64
 # TODO: python path
 ```
 
-3. Copy the system V init script to /etc/init.d/valkyrie_lcm_distro
+3. Copy the scripts under init.d to ``/etc/init.d/``
 4. Re-source via ``source ~/.bashrc``
 5. Compile
 6. Reboot and you're set :)
