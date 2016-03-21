@@ -10,12 +10,12 @@ Distro to be installed on ``link`` on Valkyrie to run LCM traffic to it.
 5. Compile
 6. Reboot and you're done :)
 
+For more information on the system V init script, cf. [here](https://github.com/fhd/init-script-template).
 
 ## Dependencies
+(not complete)
 
 ```
-build-essential libglib2.0-dev
-```
-
 build-essential cmake libglib2.0-dev git wget unzip
+```
 
