@@ -9,8 +9,6 @@
 # Description:       Enable procman-deputy immediately after boot.
 ### END INIT INFO
 
-directory="/home/val/openhumanoids/valkyrie-lcm-distro/build/bin"
-cmd="./bot-procman-deputy -n link"
 user="val"
 
 name=`basename $0`
@@ -33,9 +31,9 @@ start() {
         echo "Starting $name"
         cd "$directory"
         if [ -z "$user" ]; then
-            sudo $cmd >> "$stdout_log" 2>> "$stderr_log" &
+            sudo bash -c 'source ~/.bash_nasa_val && LCM_DEFAULT_URL=udpm://239.255.76.76:7676?ttl=1 bot-procman-deputy -n link' >> "$stdout_log" 2>> "$stderr_log" &
         else
-            sudo -u "$user" $cmd >> "$stdout_log" 2>> "$stderr_log" &
+            sudo -u "$user" bash -c 'source ~/.bash_nasa_val && LCM_DEFAULT_URL=udpm://239.255.76.76:7676?ttl=1 bot-procman-deputy -n link' >> "$stdout_log" 2>> "$stderr_log" &
         fi
         echo $! > "$pid_file"
         if ! is_running; then
