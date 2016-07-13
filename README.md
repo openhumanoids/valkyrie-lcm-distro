@@ -3,6 +3,7 @@ Distro to be installed on the Valkyrie onboard computers (``link`` for now) in o
 
 ## Instructions
 
+**On Link and Zelda**
 1. Clone this repository directly into ``~/openhumanoids``: ``cd && mkdir openhumanoids && git clone https://github.com/openhumanoids/valkyrie-lcm-distro.git``
 2. Create a new file under ``~/.bash.nasa.val.d/50_valkyrie_lcm_distro`` with the following contents:
 ```
@@ -17,6 +18,7 @@ export PYTHONPATH=$DISTRO_BASE/build/lib/python2.7/dist-packages:$PYTHONPATH
 ```
 
 3. Copy the scripts under init.d to ``/etc/init.d/``
+4. Copy scripts with the corresponding name (link/zelda) from ``upstart`` to ``/etc/init/``
 4. Re-source via ``source ~/.bashrc``
 5. Compile
 6. To set up the start of the services during boot: ``update-rc.d valkyrie_lcm_distro_bot_lcm_tunnel defaults``; ``update-rc.d valkyrie_lcm_distro_bot_procman_deputy defaults``
