@@ -1,4 +1,6 @@
 #!/bin/bash
+export LCM_DEFAULT_URL=udpm://239.255.76.67:7777?ttl=1
+
 export DISTRO_BASE="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 export PATH=$PATH:$DISTRO_BASE/build/bin
