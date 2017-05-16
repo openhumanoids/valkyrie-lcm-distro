@@ -7,3 +7,4 @@ export LD_LIBRARY_PATH=$DISTRO_BASE/build/lib:$DISTRO_BASE/build/lib64:$LD_LIBRA
 export PKG_CONFIG_PATH=$DISTRO_BASE/build/lib/pkgconfig:$DISTRO_BASE/build/lib64/pkgconfig:$PKG_CONFIG_PATH
 export PYTHONPATH=$DISTRO_BASE/build/lib/python2.7/dist-packages:$PYTHONPATH
 
+export LCM_DEFAULT_URL=udpm://239.255.76.67:7777?ttl=0
