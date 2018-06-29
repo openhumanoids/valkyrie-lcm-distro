@@ -4,7 +4,7 @@ Description="bot-procman-deputy"
 [Service]
 Environment=LCM_DEFAULT_URL=udpm://239.255.76.76:7676?ttl=0 
 ExecStart=/home/val/openhumanoids/valkyrie-lcm-distro/build/bin/bot-procman-deputy -n zelda
-Restart=on-failure
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
