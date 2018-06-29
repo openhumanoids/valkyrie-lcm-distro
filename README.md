@@ -17,10 +17,14 @@ export PKG_CONFIG_PATH=$DISTRO_BASE/build/lib/pkgconfig:$DISTRO_BASE/build/lib64
 export PYTHONPATH=$DISTRO_BASE/build/lib/python2.7/dist-packages:$PYTHONPATH
 ```
 
-4. Copy scripts with the corresponding name (link/zelda/vis04) from ``~/openhumanoids/valkyrie-lcm-distro/upstart/`` to ``/etc/init/``
+4. Copy scripts with the corresponding name (link/zelda/vis04) from ``~/openhumanoids/valkyrie-lcm-distro/systemd/`` to ``/etc/systemd/system/``
 4. (Link, Zelda only) Re-source via ``source ~/.bashrc``
 5. (Link, Zelda only) Compile
-6. To set up the start of the services during boot: ``update-rc.d valkyrie_lcm_distro_bot_lcm_tunnel defaults``; ``update-rc.d valkyrie_lcm_distro_bot_procman_deputy defaults``
+6. To set up the start of the services during boot: 
+```systemctl daemon-reload
+systemctl enable my_systemd_script.service
+systemctl start my_systemd_script.service
+```
 7. (vis04 only) run ```cp ~/openhumanoids/valkyrie-lcm-distro/upstart/valkyrie_lcm_distro.bash ~/valkyrie_lcm_distro.bash```
 7. Reboot and you're set :)
 
