@@ -7,12 +7,12 @@ set(lcm_external_args
   BUILD_IN_SOURCE 1
   )
 
-set(bot_core_lcmtypes_url https://github.com/iamwolf/bot_core_lcmtypes.git)
-set(bot_core_lcmtypes_revision c29cd6076d13ca2a3ecc23ffcbe28a0a1ab46314)
+set(bot_core_lcmtypes_url https://github.com/openhumanoids/bot_core_lcmtypes.git)
+set(bot_core_lcmtypes_revision oh-old-buildsystem)
 set(bot_core_lcmtypes_depends ${lcm_proj})
 
 set(libbot_url https://github.com/openhumanoids/libbot.git)
-set(libbot_revision 2a243a3) #ed4a76423f2a21594436490341f907710d3f78dd)
+set(libbot_revision libbot-openhumanoids)
 set(libbot_depends bot_core_lcmtypes ${lcm_proj})
 set(libbot_external_args
   CMAKE_CACHE_ARGS
