@@ -4,8 +4,8 @@ Distro to be installed on the Valkyrie onboard computers (``link`` for now) in o
 ## Instructions
 
 **On Link, Zelda and vis04**
-1. Clone this repository directly into ``~/openhumanoids``: ``cd && mkdir openhumanoids && git clone https://github.com/openhumanoids/valkyrie-lcm-distro.git``
-2. (Link, Zelda only) Create a new file under ``~/.bash.nasa.val.d/50_valkyrie_lcm_distro`` with the following contents:
+1. Clone this repository directly into ``~/openhumanoids``: ``cd && mkdir openhumanoids && cd openhumanoids && git clone https://github.com/openhumanoids/valkyrie-lcm-distro.git``
+2. (Link, Zelda only) Create a new file under ``~/.val_config.d/51_valkyrie_lcm_distro`` with the following contents:
 ```
 #!/bin/bash
 export DISTRO_BASE="/home/val/openhumanoids/valkyrie-lcm-distro"
