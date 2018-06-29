@@ -2,7 +2,8 @@
 Description="bot-procman-deputy"
 
 [Service]
-ExecStart=/home/val/openhumanoids/valkyrie-lcm-distro/build/bin/bot-procman-deputy -n link --lcm-url "udpm://239.255.76.76:7676?ttl=0"
+Environment=LCM_DEFAULT_URL=udpm://239.255.76.76:7676?ttl=0 
+ExecStart=/home/val/openhumanoids/valkyrie-lcm-distro/build/bin/bot-procman-deputy -n link
 Restart=always
 
 [Install]

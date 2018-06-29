@@ -2,7 +2,8 @@
 Description="bot-lcm-tunnel"
 
 [Service]
-ExecStart=/home/val/openhumanoids/valkyrie-lcm-distro/build/bin/bot-lcm-tunnel 10.185.0.40 -v -s "DESIRED_NECK_ANGLES|DESIRED_HAND_ANGLES|DESIRED_FOREARM_ANGLES|PMD_ORDERS2|ROBOT_BEHAVIOR|ROBOT_COMMAND" --lcm-url="udpm://239.255.76.76:7676?ttl=0"
+Environment=LCM_DEFAULT_URL=udpm://239.255.76.76:7676?ttl=0 
+ExecStart=/home/val/openhumanoids/valkyrie-lcm-distro/build/bin/bot-lcm-tunnel 10.185.0.40 -v -s "DESIRED_NECK_ANGLES|DESIRED_HAND_ANGLES|DESIRED_FOREARM_ANGLES|PMD_ORDERS2|PMD_INFO2|ROBOT_BEHAVIOR|ROBOT_COMMAND"
 Restart=always
 
 [Install]

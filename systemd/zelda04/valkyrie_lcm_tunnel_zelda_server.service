@@ -2,7 +2,8 @@
 Description="bot-lcm-tunnel"
 
 [Service]
-ExecStart=/home/val/openhumanoids/valkyrie-lcm-distro/build/bin/bot-lcm-tunnel -p 1234 -R "PMD_INFO2|LCM_TUNNEL_INTROSPECT" --lcm-url="udpm://239.255.76.76:7676?ttl=0"
+Environment=LCM_DEFAULT_URL=udpm://239.255.76.76:7676?ttl=0 
+ExecStart=/home/val/openhumanoids/valkyrie-lcm-distro/build/bin/bot-lcm-tunnel -p 1234 -R "PMD_INFO2|LCM_TUNNEL_INTROSPECT"
 Restart=always
 
 [Install]
