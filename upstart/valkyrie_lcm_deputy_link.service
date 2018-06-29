@@ -5,3 +5,6 @@ Description="bot-lcm-tunnel"
 Environment=LCM_DEFAULT_URL=udpm://239.255.76.76:7676?ttl=0 
 ExecStart=/home/val/openhumanoids/valkyrie-lcm-distro/build/bin/bot-procman-deputy -n link
 Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
