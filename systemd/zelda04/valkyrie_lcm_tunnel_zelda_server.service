@@ -1,5 +1,6 @@
 [Unit]
 Description="bot-lcm-tunnel"
+StartLimitBurst=0
 
 [Service]
 Environment=LCM_DEFAULT_URL=udpm://239.255.76.76:7676?ttl=0 
